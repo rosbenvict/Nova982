@@ -1,0 +1,190 @@
+<!-- Estructura de html :v -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Nova </title> 
+    <!-- los link son la direccion de css que le da todo lo estetico ademas sin el css se veria el esqueleto de hmtl sin el css y en el link de cdnjs. son los iconos de secciones de inicio, quienes somos, etc. :D-->
+    <link href="../css/estilos.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+<body>  
+  <h1>Welcome to Nova</h1> 
+  <img 
+        src="../img/Nova icono.png" 
+        alt="Logo Nova" 
+        class="logo"
+        style="display: block; margin: 0 auto; width: 150px; max-width: 80%; border-radius: 15px;">
+  <header>
+    <nav>
+    <ul id="menu">
+
+<!-- Las secciones con su respectivo icono.-->
+  <li><a href="#Inicio"><i class="fas fa-home"></i> Inicio</a></li>
+  <li><a href="#Quienes Somos"><i class="fas fa-users"></i> Quienes Somos</a></li>
+  <li><a href="#Mision Y Vision"><i class="fas fa-bullseye"></i> Misión y Visión</a></li>
+  <li><a href="#Contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
+  <li><a href="#Redes Sociales"><i class="fas fa-share-alt"></i> Redes Sociales</a></li>
+   </ul>
+    </nav>
+  </header> 
+  <main>
+
+<!-- Las secciones con la informacion recabada y con sus links directos para más informacion de nuestra microempresa.--> 
+
+    <section id="Inicio">
+        
+        <p style="font-size: 2em; font-weight: bold;">
+        BIENVENIDOS A NUESTRA PAGINA WEB DE NOVA.
+       </p>
+       <video width="750" controls>
+       <source src="../mp4/Presentacion.mp4" type="video/mp4">
+       Tu navegador no soporta la reproducción de video.
+       </video>
+       <div style="text-align: center; margin-top: 20px;">
+      </div>
+    </section>
+
+    <section id="Quienes Somos">
+        <h2>Quienes Somos</h2>
+        <p>Somos un equipo dedicado a brindar soluciones innovadoras.</p>
+    </section>
+
+    
+   <section id="Mision Y Vision">
+       <h2>Misión</h2>
+       <p style="text-align: justify; font-size: 1.3em; max-width: 900px; margin: auto;">
+        Nuestra misión es ser líderes en la industria de defensa personal, ofreciendo soluciones innovadoras y efectivas que empoderen a las personas, permitiéndoles sentirse seguras y confiadas en su capacidad para protegerse. Nos comprometemos a desarrollar herramientas que fortalezcan la autonomía y fomenten una cultura de prevención, promoviendo el bienestar integral de quienes buscan mejorar su seguridad personal.
+      </p>
+      <h2>Vision</h2>
+       <p style="text-align: justify; font-size: 1.3em; max-width: 900px; margin: auto;">
+        Nuestra visión es convertirnos en la plataforma líder e innovadora a nivel regional en la prevención de la violencia y la promoción de la seguridad. Aspiramos a empoderar a cada individuo mediante la entrega de recursos físicos y apoyo emocional que les permitan defenderse con confianza y vivir sin miedo. Creemos en un entorno donde la seguridad sea accesible para todos, impulsando el cambio social a través de la educación, la tecnología y el acompañamiento constante.
+      </p>
+   </section>
+
+
+    <section id="Contacto">
+      <h2>Contacto</h2>
+      <p>Puedes contactarnos a traves en WhatsApp</p>
+       <div class="contact-icons">
+        <a href="https://wa.me/52712288655" target="_blank" class="social-circle whatsapp" >
+         <i class="fab fa-whatsapp"></i>
+          <span>WhatsApp</span>
+        </a>
+       </div>
+    </section>
+
+
+   <section id="Redes Sociales">
+        <h2>Redes Sociales</h2>
+         <p>Síguenos en nuestras redes sociales para estar al día con las últimas novedades.</p>
+          <div class="social-circle-container">
+             <a href="https://www.instagram.com/nova_av_on_?igsh=MWR5Y2F4ZGx6d3Zubw==" target="_blank" class="social-circle instagram">
+               <i class="fab fa-instagram"></i>
+                 <span>Instagram</span>
+            </a>
+             <a href="https://www.facebook.com/share/1BUtAXf3md/" target="_blank" class="social-circle facebook">
+               <i class="fab fa-facebook-f"></i>
+                 <span>Facebook</span>
+           </a>
+             <a href="https://youtube.com/@nova_av_on?si=ZWYfw0mbySPRhR3X" target="_blank" class="social-circle youtube">
+               <i class="fab fa-youtube"></i>
+                 <span>YouTube</span>
+           </a>
+          </div>
+
+<!-- el estilo de circulos de redes sociales.-->
+<style>
+.social-circle-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.social-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+.social-circle span {
+  position: absolute;
+  bottom: -25px;
+  font-size: 0.9rem;
+  color: #2e2e2e;
+}
+
+.social-circle i {
+  font-size: 1.8rem;
+}
+
+/* Colores específicos */
+
+.gmail {
+  background-color: #D44638;
+}
+
+.whatsapp {
+  background-color: #25D366;
+}
+
+.instagram {
+  background-color: #E1306C;
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.youtube {
+  background-color: #FF0000;
+}
+
+.social-circle:hover {
+  transform: scale(1.1);
+}  
+</style>
+</section>
+
+
+   </main>
+   <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const secciones = document.querySelectorAll('main section');
+      const enlaces = document.querySelectorAll('nav a');
+
+      function mostrarSeccion(id) {
+        secciones.forEach(sec => {
+          sec.style.display = (sec.id === id) ? 'block' : 'none';
+        });
+      }
+
+      enlaces.forEach(enlace => {
+        enlace.addEventListener('click', function(e) {
+          e.preventDefault();
+          const id = this.getAttribute('href').substring(1);
+          mostrarSeccion(id);
+        });
+      });
+
+      mostrarSeccion('inicio');
+    });
+   </script>
+
+</body>
+</html>
